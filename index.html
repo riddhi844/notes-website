@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Website</title>
+    <meta name="description"
+        content="Access free study notes for students. Download notes on various subjects like Math, Science, and Programming.">
+    <meta name="keywords" content="study notes, free notes, download notes, college notes, student resources">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Student Notes</h1>
+        <input type="text" id="search-bar" placeholder="Search notes...">
+        <button id="theme-toggle">🌙</button>
+    </header>
+
+    <main>
+        <section id="categories">
+            <h2>Categories</h2>
+            <button class="category">AOA</button>
+            <button class="category">ITC</button>
+            <button class="category">CGM</button>
+            <button class="category">OS</button>
+            <button class="category">WC</button>
+            <button class="category">CD</button>
+        </section>
+
+        <section id="notes-list">
+            <h2>Available Notes</h2>
+            <div class="note" data-category="AOA">
+                <h3>AOA_Unit-2.1-Background</h3>
+                <p>Review of Algorithm, Complexity Order Notations: definitions and
+                    calculating complexity</p>
+                <button><a href="/notes/aoa-unit-1.html" class="button">View</a></button>
+                <button><a href="/notes/aoa-unit-1.html" download class="button">Download</a></button>
+
+            </div>
+
+            <div class="note" data-category="AOA">
+                <h3>AOA_Unit-2.2-Divide AndConquer Method</h3>
+                <p>Binary Search, Merge Sort, Quick sort and
+                    Strassen's matrix multiplication algorithms.</p>
+                <button><a href="/notes/aoa-unit-2.html" class="button">View</a></button>
+                <button><a href="/notes/aoa-unit-2.html" download class="button">Download</a></button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Notes Website. All rights reserved.</p>
+    </footer>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Notes Website",
+  "url": "https://yoursite.com",
+  "description": "Free notes for students to view and download.",
+  "sameAs": ["https://facebook.com/yourpage", "https://twitter.com/yourprofile"]
+}
+</script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

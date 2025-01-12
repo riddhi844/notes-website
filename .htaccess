@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^notes/([a-zA-Z0-9-]+)$ /notes/$1.html [L]

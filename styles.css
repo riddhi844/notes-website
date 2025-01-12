@@ -1,0 +1,130 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header #search-bar {
+    margin-top: 10px;
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border: none;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+}
+
+#categories {
+    margin-bottom: 20px;
+}
+
+#categories .category {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#categories .category:hover {
+    background-color: #45a049;
+}
+
+#notes-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.note {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.note h3 {
+    margin: 0 0 10px;
+}
+
+.note p {
+    margin: 0 0 15px;
+}
+
+.note button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.note button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Dark Theme Styles */
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-theme header {
+    background-color: #1f1f1f;
+}
+
+body.dark-theme #search-bar {
+    background-color: #333333;
+    color: white;
+}
+
+body.dark-theme .category,
+body.dark-theme .note button {
+    background-color: #333333;
+    color: white;
+}
+
+body.dark-theme .note {
+    background-color: #1e1e1e;
+    border-color: #444444;
+}
+
+body.dark-theme footer {
+    background-color: #1f1f1f;
+}
+@media (max-width: 768px) {
+
+    /* Styles for smaller screens */
+    body {
+        font-size: 14px;
+    }
+}
